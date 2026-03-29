@@ -17,7 +17,7 @@ const CuentaCorrienteGeneral = () => {
       </div>
 
       {/* Balance card */}
-      <div className="mx-5 mt-6 bg-white rounded-xl px-6 py-5 shadow-sm">
+      <div className="mx-5 mt-6 bg-white rounded-xl px-6 py-5 border border-[hsl(0,0%,88%)] shadow-[0_4px_16px_rgba(0,0,0,0.12)]">
         <p className="text-3xl font-bold text-[hsl(0,0%,15%)] text-center" data-testid="text-balance">
           0,50 €
         </p>
