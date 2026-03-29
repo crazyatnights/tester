@@ -48,10 +48,10 @@ const Home = () => {
       {/* Content area */}
       <div className="flex-1 rounded-t-3xl bg-[hsl(0,0%,94%)] px-5 pt-5 pb-24 space-y-1">
         {/* Balance dropdown */}
-        <div className="bg-white rounded-xl px-4 py-3.5 flex items-center justify-between">
+        <button onClick={() => navigate("/mis-cuentas")} className="w-full bg-white rounded-xl px-4 py-3.5 flex items-center justify-between">
           <span className="text-[hsl(0,0%,25%)] text-base">Balance (tengo y debo)</span>
           <ChevronDown className="h-5 w-5 text-[hsl(0,0%,50%)]" />
-        </div>
+        </button>
 
         {/* Separator */}
         <div className="h-px bg-[hsl(0,0%,85%)] my-2" />
