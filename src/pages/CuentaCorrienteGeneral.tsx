@@ -6,12 +6,12 @@ const CuentaCorrienteGeneral = () => {
 
   return (
     <div className="flex min-h-screen flex-col bg-[hsl(166,30%,93%)]">
-      {/* Header – green background */}
-      <div className="bg-[hsl(166,100%,24%)] px-5 pt-6 pb-4 flex items-center gap-3">
+      {/* Header – same light background, subtle bottom shadow line */}
+      <div className="bg-[hsl(166,30%,93%)] px-5 pt-6 pb-4 flex items-center gap-3 shadow-[0_1px_3px_rgba(0,0,0,0.10)]">
         <button onClick={() => navigate(-1)} data-testid="button-back">
-          <ArrowLeft className="h-5 w-5 text-white" />
+          <ArrowLeft className="h-5 w-5 text-[hsl(166,100%,24%)]" />
         </button>
-        <span className="text-sm font-semibold text-white tracking-wide uppercase">
+        <span className="text-sm font-semibold text-[hsl(166,100%,24%)] tracking-wide uppercase">
           Cuenta Corriente General *472
         </span>
       </div>
@@ -68,10 +68,10 @@ const CuentaCorrienteGeneral = () => {
       {/* Spacer */}
       <div className="flex-1" />
 
-      {/* Footer – green background with dash and action text */}
-      <div className="bg-[hsl(166,100%,24%)] pt-3 pb-8 flex flex-col items-center gap-2">
-        <div className="h-1 w-10 rounded-full bg-white/40" />
-        <p className="text-base font-semibold text-white">¿Qué quieres hacer?</p>
+      {/* Bottom action area – same light background, outside any green */}
+      <div className="pb-8 flex flex-col items-center gap-2">
+        <div className="h-1 w-10 rounded-full bg-[hsl(0,0%,65%)]" />
+        <p className="text-base font-semibold text-[hsl(0,0%,20%)]">¿Qué quieres hacer?</p>
       </div>
     </div>
   );
