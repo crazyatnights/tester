@@ -1,10 +1,18 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Eye, EyeOff, Menu } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Index = () => {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    if (password.length > 0) {
+      navigate("/home");
+    }
+  };
 
   return (
     <div className="flex min-h-screen flex-col items-center bg-background px-6 py-8">
