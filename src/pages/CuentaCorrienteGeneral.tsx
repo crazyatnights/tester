@@ -5,13 +5,13 @@ const CuentaCorrienteGeneral = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex min-h-screen flex-col bg-[hsl(0,0%,96%)]">
-      {/* Header */}
-      <div className="bg-white px-5 pt-6 pb-4 flex items-center gap-3 border-b border-[hsl(0,0%,90%)]">
+    <div className="flex min-h-screen flex-col bg-[hsl(166,30%,93%)]">
+      {/* Header – green background */}
+      <div className="bg-[hsl(166,100%,24%)] px-5 pt-6 pb-4 flex items-center gap-3">
         <button onClick={() => navigate(-1)} data-testid="button-back">
-          <ArrowLeft className="h-5 w-5 text-[hsl(0,0%,30%)]" />
+          <ArrowLeft className="h-5 w-5 text-white" />
         </button>
-        <span className="text-sm font-semibold text-[hsl(0,0%,20%)] tracking-wide uppercase">
+        <span className="text-sm font-semibold text-white tracking-wide uppercase">
           Cuenta Corriente General *472
         </span>
       </div>
@@ -23,12 +23,12 @@ const CuentaCorrienteGeneral = () => {
         </p>
       </div>
 
-      {/* Details */}
-      <div className="mx-5 mt-6 bg-white rounded-xl divide-y divide-[hsl(0,0%,90%)] shadow-sm">
+      {/* Details – plain items on light background */}
+      <div className="mx-5 mt-6 space-y-5">
         {/* IBAN */}
-        <div className="px-5 py-4">
+        <div>
           <div className="flex items-center justify-between">
-            <span className="text-sm text-[hsl(0,0%,40%)]">IBAN</span>
+            <span className="text-sm text-[hsl(0,0%,35%)]">IBAN</span>
             <div className="flex items-center gap-3">
               <button data-testid="button-copy-iban">
                 <ClipboardList className="h-5 w-5 text-[hsl(0,0%,45%)]" />
@@ -44,9 +44,9 @@ const CuentaCorrienteGeneral = () => {
         </div>
 
         {/* SWIFT/BIC */}
-        <div className="px-5 py-4">
+        <div>
           <div className="flex items-center justify-between">
-            <span className="text-sm text-[hsl(0,0%,40%)]">SWIFT/BIC</span>
+            <span className="text-sm text-[hsl(0,0%,35%)]">SWIFT/BIC</span>
             <button data-testid="button-info-swift">
               <Info className="h-5 w-5 text-[hsl(0,0%,45%)]" />
             </button>
@@ -57,8 +57,8 @@ const CuentaCorrienteGeneral = () => {
         </div>
 
         {/* Titular */}
-        <div className="px-5 py-4">
-          <span className="text-sm text-[hsl(0,0%,40%)]">Titular</span>
+        <div>
+          <span className="text-sm text-[hsl(0,0%,35%)]">Titular</span>
           <p className="text-base font-medium text-[hsl(0,0%,15%)] mt-1" data-testid="text-titular">
             Cristina
           </p>
@@ -68,10 +68,10 @@ const CuentaCorrienteGeneral = () => {
       {/* Spacer */}
       <div className="flex-1" />
 
-      {/* Bottom action bar */}
-      <div className="pb-8 flex flex-col items-center gap-2">
-        <div className="h-1 w-10 rounded-full bg-[hsl(0,0%,70%)]" />
-        <p className="text-base font-semibold text-[hsl(0,0%,20%)]">¿Qué quieres hacer?</p>
+      {/* Footer – green background with dash and action text */}
+      <div className="bg-[hsl(166,100%,24%)] pt-3 pb-8 flex flex-col items-center gap-2">
+        <div className="h-1 w-10 rounded-full bg-white/40" />
+        <p className="text-base font-semibold text-white">¿Qué quieres hacer?</p>
       </div>
     </div>
   );
