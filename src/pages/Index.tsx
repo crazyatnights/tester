@@ -2,11 +2,13 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Eye, EyeOff, Menu } from "lucide-react";
 import logo from "@/assets/logo.png";
+import { useKeyboardAware } from "@/hooks/useKeyboardAware";
 
 const Index = () => {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
+  const { viewportHeight, isKeyboardOpen } = useKeyboardAware();
 
   const handleLogin = () => {
     if (password.length > 0) {
@@ -15,7 +17,10 @@ const Index = () => {
   };
 
   return (
-    <div className="flex min-h-screen flex-col items-center bg-background px-6 py-8">
+    <div
+      className="flex flex-col items-center bg-background px-6 py-8 overflow-y-auto transition-all duration-200"
+      style={{ height: `${viewportHeight}px` }}
+    >
       {/* Menu icon top-right */}
       <div className="w-full flex justify-end">
         <button className="text-foreground/80 hover:text-foreground">
@@ -24,14 +29,22 @@ const Index = () => {
       </div>
 
       {/* Logo */}
-      <div className="mt-12 mb-6">
-        <img src={logo} alt="Logo" width={100} height={100} />
+      <div className={`mb-6 transition-all duration-200 ${isKeyboardOpen ? "mt-4" : "mt-12"}`}>
+        <img
+          src={logo}
+          alt="Logo"
+          width={isKeyboardOpen ? 60 : 100}
+          height={isKeyboardOpen ? 60 : 100}
+          className="transition-all duration-200"
+        />
       </div>
 
       {/* Greeting */}
-      <h1 className="text-2xl font-semibold text-foreground mb-10">
-        ¡Hola, Cristina Misi!
-      </h1>
+      {!isKeyboardOpen && (
+        <h1 className="text-2xl font-semibold text-foreground mb-10">
+          ¡Hola, Cristina Misi!
+        </h1>
+      )}
 
       {/* Password field */}
       <div className="w-full max-w-sm">
@@ -62,7 +75,7 @@ const Index = () => {
       </div>
 
       {/* Spacer */}
-      <div className="flex-1" />
+      <div className={isKeyboardOpen ? "flex-none h-4" : "flex-1"} />
 
       {/* Bottom section */}
       <div className="w-full max-w-sm space-y-4 pb-8">
