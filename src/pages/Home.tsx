@@ -70,12 +70,16 @@ const Home = () => {
             )}
           </button>
           {cuentasOpen && (
-            <div className="bg-white rounded-xl px-4 py-4 mb-2">
+            <button
+              onClick={() => navigate("/cuenta-corriente-general")}
+              className="w-full bg-white rounded-xl px-4 py-4 mb-2 text-left"
+              data-testid="button-cuenta-corriente-general"
+            >
               <p className="text-[hsl(0,0%,30%)] text-sm font-semibold uppercase tracking-wide">
                 Cuenta corriente general
               </p>
               <p className="text-[hsl(166,100%,24%)] text-lg font-bold mt-1">0,50 €</p>
-            </div>
+            </button>
           )}
         </div>
 
