@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { User, Menu, EyeOff, Eye, ChevronDown, ChevronUp, Home as HomeIcon, Send, PlusCircle, MessageSquare, Mail } from "lucide-react";
+import tarjetaImg from "@/assets/tarjeta.png";
 
 const Home = () => {
   const [balanceVisible, setBalanceVisible] = useState(true);
@@ -95,9 +96,7 @@ const Home = () => {
             )}
           </button>
           {tarjetasOpen && (
-            <div className="bg-[hsl(166,100%,24%)] rounded-xl h-24 flex items-center justify-center">
-              <p className="text-foreground font-bold text-sm">CAJA RURAL</p>
-            </div>
+            <img src={tarjetaImg} alt="Tarjeta Caja Rural" className="rounded-xl w-full" />
           )}
         </div>
       </div>
