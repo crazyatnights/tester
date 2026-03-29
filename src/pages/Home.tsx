@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { User, Menu, EyeOff, Eye, ChevronDown, ChevronUp, Home as HomeIcon, Send, PlusCircle, MessageSquare, Mail } from "lucide-react";
+import tarjetaImg from "@/assets/tarjeta.png";
 
 const Home = () => {
   const [balanceVisible, setBalanceVisible] = useState(true);
