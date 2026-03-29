@@ -8,25 +8,25 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 163 72% 52%;
+    --background: 166 100% 24%;
     --foreground: 0 0% 100%;
 
-    --card: 163 72% 52%;
+    --card: 166 100% 24%;
     --card-foreground: 0 0% 100%;
 
-    --popover: 163 72% 52%;
+    --popover: 166 100% 24%;
     --popover-foreground: 0 0% 100%;
 
-    --primary: 163 72% 62%;
+    --primary: 166 100% 30%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 163 72% 46%;
+    --secondary: 166 100% 20%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 163 72% 46%;
-    --muted-foreground: 0 0% 90%;
+    --muted: 166 100% 20%;
+    --muted-foreground: 0 0% 85%;
 
-    --accent: 163 72% 58%;
+    --accent: 166 100% 28%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -38,16 +38,16 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
-    --sidebar-background: 163 72% 52%;
+    --sidebar-background: 166 100% 24%;
     --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 163 72% 46%;
+    --sidebar-primary: 166 100% 20%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 163 72% 58%;
+    --sidebar-accent: 166 100% 28%;
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 0 0% 100% / 0.3;
     --sidebar-ring: 0 0% 100%;
 
-    --login-btn: 163 72% 62%;
+    --login-btn: 166 100% 30%;
     --login-btn-foreground: 0 0% 100%;
   }
 
