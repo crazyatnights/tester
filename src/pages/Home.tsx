@@ -123,7 +123,7 @@ const Home = () => {
           </button>
           <span className="text-[10px] text-[hsl(0,0%,50%)] mt-0.5">Contratar</span>
         </div>
-        <NavItem icon={<img src={bizumImg} alt="Bizum" className="h-5 w-5 object-contain" />} label="Bizum" />
+        <NavItem icon={<img src={bizumImg} alt="Bizum" className="h-[30px] w-[30px] object-contain" />} label="Bizum" />
         <NavItem icon={<Mail className="h-5 w-5" />} label="Bandeja" />
       </div>
     </div>
