@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { User, Menu, EyeOff, Eye, ChevronDown, ChevronUp, Home as HomeIcon, Send, PlusCircle, MessageSquare, Mail } from "lucide-react";
 import tarjetaImg from "@/assets/tarjeta.png";
+import bizumImg from "@/assets/bizum.png";
 
 const Home = () => {
   const [balanceVisible, setBalanceVisible] = useState(true);
@@ -122,7 +123,7 @@ const Home = () => {
           </button>
           <span className="text-[10px] text-[hsl(0,0%,50%)] mt-0.5">Contratar</span>
         </div>
-        <NavItem icon={<span className="text-lg font-bold">%.</span>} label="Bizum" />
+        <NavItem icon={<img src={bizumImg} alt="Bizum" className="h-5 w-5 object-contain" />} label="Bizum" />
         <NavItem icon={<Mail className="h-5 w-5" />} label="Bandeja" />
       </div>
     </div>
