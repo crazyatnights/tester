@@ -18,7 +18,7 @@ const CuentaCorrienteGeneral = () => {
           <ArrowLeft className="h-5 w-5 text-[hsl(166,100%,24%)]" />
         </button>
         <span className="text-sm font-semibold text-[hsl(166,100%,24%)] tracking-wide uppercase">
-          Cuenta Corriente General *472
+          Cuenta Corriente General *4720
         </span>
       </div>
 
@@ -45,7 +45,7 @@ const CuentaCorrienteGeneral = () => {
             </div>
           </div>
           <p className="text-base font-medium text-[hsl(0,0%,15%)] mt-1" data-testid="text-iban">
-            ES3031870871
+            ES3031870871716631474720
           </p>
         </div>
 
@@ -58,7 +58,7 @@ const CuentaCorrienteGeneral = () => {
             </button>
           </div>
           <p className="text-base font-medium text-[hsl(0,0%,15%)] mt-1" data-testid="text-swift">
-            BCOEESMM18
+            BCOEESMM187
           </p>
         </div>
 
@@ -66,7 +66,7 @@ const CuentaCorrienteGeneral = () => {
         <div>
           <span className="text-sm text-[hsl(0,0%,35%)]">Titular</span>
           <p className="text-base font-medium text-[hsl(0,0%,15%)] mt-1" data-testid="text-titular">
-            Cristina
+            Cristina Misi Masolo Ndong
           </p>
         </div>
       </div>
