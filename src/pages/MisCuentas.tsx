@@ -66,8 +66,9 @@ const MisCuentas = () => {
             <p className="text-sm text-[hsl(0,0%,40%)]">1,00 €</p>
           </div>
         </div>
-      </div>
 
+        {/* 30 mar */}
+        <p className="text-sm text-[hsl(0,0%,50%)] mb-2 mt-4">30 mar</p>
         <div className="flex items-center justify-between py-3 border-b border-[hsl(0,0%,90%)]">
           <div className="flex items-center gap-3">
             <ArrowLeftRight className="h-5 w-5 text-[hsl(0,0%,45%)]" />
@@ -78,40 +79,41 @@ const MisCuentas = () => {
           </div>
           <div className="text-right">
             <p className="text-base font-semibold text-[hsl(0,0%,15%)]">-0,50 €</p>
-            <p className="text-sm text-[hsl(0,0%,40%)]">1,50 €</p>
-          </div>
-        </div>
-      </div>
-
-        <div className="flex items-center justify-between py-3 border-b border-[hsl(0,0%,90%)]">
-          <div className="flex items-center gap-3">
-            <ArrowLeftRight className="h-5 w-5 text-[hsl(0,0%,45%)]" />
-            <div>
-              <p className="text-base font-medium text-[hsl(0,0%,15%)]">Trf.El Bardi</p>
-              <p className="text-xs text-[hsl(0,0%,55%)]">Fecha Valor 30 Mar 2026</p>
-            </div>
-          </div>
-          <div className="text-right">
-            <p className="text-base font-semibold text-[hsl(0,0%,15%)]">+1,00 €</p>
-            <p className="text-sm text-[hsl(0,0%,40%)]">2,00 €</p>
-          </div>
-        </div>
-      </div>
-
-        <div className="flex items-center justify-between py-3 border-b border-[hsl(0,0%,90%)]">
-          <div className="flex items-center gap-3">
-            <ArrowLeftRight className="h-5 w-5 text-[hsl(0,0%,45%)]" />
-            <div>
-              <p className="text-base font-medium text-[hsl(0,0%,15%)]">Trf.El Bardi</p>
-              <p className="text-xs text-[hsl(0,0%,55%)]">Fecha Valor 30 Mar 2026</p>
-            </div>
-          </div>
-          <div className="text-right">
-            <p className="text-base font-semibold text-[hsl(0,0%,15%)]">+1,00 €</p>
             <p className="text-sm text-[hsl(0,0%,40%)]">1,00 €</p>
           </div>
         </div>
-      </div>
+
+        {/* 30 mar */}
+        <p className="text-sm text-[hsl(0,0%,50%)] mb-2 mt-4">30 mar</p>
+        <div className="flex items-center justify-between py-3 border-b border-[hsl(0,0%,90%)]">
+          <div className="flex items-center gap-3">
+            <ArrowLeftRight className="h-5 w-5 text-[hsl(0,0%,45%)]" />
+            <div>
+              <p className="text-base font-medium text-[hsl(0,0%,15%)]">Trf.El Bardi</p>
+              <p className="text-xs text-[hsl(0,0%,55%)]">Fecha Valor 30 Mar 2026</p>
+            </div>
+          </div>
+          <div className="text-right">
+            <p className="text-base font-semibold text-[hsl(0,0%,15%)]">-0,50 €</p>
+            <p className="text-sm text-[hsl(0,0%,40%)]">1,00 €</p>
+          </div>
+        </div>
+
+        {/* 30 mar */}
+        <p className="text-sm text-[hsl(0,0%,50%)] mb-2 mt-4">30 mar</p>
+        <div className="flex items-center justify-between py-3 border-b border-[hsl(0,0%,90%)]">
+          <div className="flex items-center gap-3">
+            <ArrowLeftRight className="h-5 w-5 text-[hsl(0,0%,45%)]" />
+            <div>
+              <p className="text-base font-medium text-[hsl(0,0%,15%)]">Trf.El Bardi</p>
+              <p className="text-xs text-[hsl(0,0%,55%)]">Fecha Valor 30 Mar 2026</p>
+            </div>
+          </div>
+          <div className="text-right">
+            <p className="text-base font-semibold text-[hsl(0,0%,15%)]">-0,50 €</p>
+            <p className="text-sm text-[hsl(0,0%,40%)]">1,00 €</p>
+          </div>
+        </div>
     
         {/* 28 mar */}
         <p className="text-sm text-[hsl(0,0%,50%)] mb-2 mt-2">28 mar</p>
