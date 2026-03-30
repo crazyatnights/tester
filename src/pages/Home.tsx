@@ -40,7 +40,7 @@ const Home = () => {
             {balanceVisible ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
           </button>
           <p className="text-4xl font-bold text-foreground">
-            {balanceVisible ? "0,50 €" : "••••"}
+            {balanceVisible ? "1,00 €" : "••••"}
           </p>
           <p className="text-sm text-foreground/80 mt-1">Saldo total de tus cuentas</p>
         </div>
