@@ -50,8 +50,8 @@ const MisCuentas = () => {
             <SlidersHorizontal className="h-5 w-5 text-[hsl(0,0%,40%)]" />
           </div>
         </div>
-    
-                {/* 30 mar - Transaction 1 */}
+
+        {/* 30 mar - Transaction 1 */}
         <p className="text-sm text-[hsl(0,0%,50%)] mb-2 mt-4">30 mar</p>
         <div className="flex items-center justify-between py-3 border-b border-[hsl(0,0%,90%)]">
           <div className="flex items-center gap-3">
@@ -99,6 +99,22 @@ const MisCuentas = () => {
           </div>
         </div>
 
+        {/* 30 mar - Transaction 4 */}
+        <p className="text-sm text-[hsl(0,0%,50%)] mb-2 mt-4">30 mar</p>
+        <div className="flex items-center justify-between py-3 border-b border-[hsl(0,0%,90%)]">
+          <div className="flex items-center gap-3">
+            <ArrowLeftRight className="h-5 w-5 text-[hsl(0,0%,45%)]" />
+            <div>
+              <p className="text-base font-medium text-[hsl(0,0%,15%)]">Trf.El Bardi</p>
+              <p className="text-xs text-[hsl(0,0%,55%)]">Fecha Valor 30 Mar 2026</p>
+            </div>
+          </div>
+          <div className="text-right">
+            <p className="text-base font-semibold text-[hsl(0,0%,15%)]">-0,50 €</p>
+            <p className="text-sm text-[hsl(0,0%,40%)]">1,00 €</p>
+          </div>
+        </div>
+
         {/* 28 mar */}
         <p className="text-sm text-[hsl(0,0%,50%)] mb-2 mt-4">28 mar</p>
         <div className="flex items-center justify-between py-3 border-b border-[hsl(0,0%,90%)]">
@@ -127,6 +143,7 @@ const MisCuentas = () => {
             <p className="text-sm text-[hsl(0,0%,40%)]">1,00 €</p>
           </div>
         </div>
+      </div>
 
       {/* Chat FAB */}
       <div className="fixed bottom-20 right-5 z-20">
